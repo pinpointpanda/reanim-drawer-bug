@@ -1,12 +1,20 @@
-import {AppRegistry, Platform} from 'react-native';
-import {name as appName} from './app.json';
-import App from './Screen';
+/* eslint-disable prettier/prettier */
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { NavigationContainer } from '@react-navigation/native';
+import * as React from 'react';
+import 'react-native-gesture-handler';
+import { ScreenOne, ScreenTwo } from './Screen';
 
-AppRegistry.registerComponent(appName, () => App);
+const Drawer = createDrawerNavigator();
 
-if (Platform.OS === 'web') {
-  const rootTag = document.getElementById('root');
-  AppRegistry.runApplication(appName, {rootTag});
+export const AppHome = () => {
+return (
+  <NavigationContainer>
+      <Drawer.Navigator initialRouteName="Home" >
+        <Drawer.Screen name="Screen One" component={ScreenOne} />
+        <Drawer.Screen name="Screen Two" component={ScreenTwo} />
+      </Drawer.Navigator>
+  </NavigationContainer>
+)
 }
 
-export default App;

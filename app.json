@@ -1,8 +1,8 @@
 {
-  "name": "Reanimated2Playground",
-  "displayName": "Reanimated2Playground",
+  "name": "Reanimated2NavigationDrawerBug",
+  "displayName": "Reanimated2NavigationDrawerBug",
   "expo": {
-    "name": "Reanimated2Playground",
+    "name": "Reanimated2NavigationDrawerBug",
     "privacy": "unlisted",
     "sdkVersion": "34.0.0",
     "version": "1.0.0",
